@@ -7,10 +7,10 @@
  * Thank you all, you're awesome!
  */
 
-import NOW from './Now'
-import Group from './Group'
 import Easing from './Easing'
+import Group from './Group'
 import Interpolation from './Interpolation'
+import now from './Now'
 import Sequence from './Sequence'
 import Tween from './Tween'
 import VERSION from './Version'
@@ -23,7 +23,7 @@ import VERSION from './Version'
  */
 class Main extends Group {
 	public version = VERSION
-	public now = NOW
+	public now = now
 	public Group = Group
 	public Easing = Easing
 	public Interpolation = Interpolation
@@ -33,3 +33,5 @@ class Main extends Group {
 
 const TWEEN = new Main()
 export default TWEEN
+
+export {Easing, Group, Interpolation, now, Sequence, Tween, VERSION}
